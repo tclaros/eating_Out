@@ -65,12 +65,28 @@ colPerc(table1)
   
 This table shows that white people eat more than black and other people. Black and other eat out less, but are still very similar. 
 
+# Results
 
+## Inferential Results
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+  
+Chi-square test shows that the p-value is 0.000002287. Since the p-value is so small we reject the null hypothesis. 
 
-
-
-
-
-
-
+```{r}
+fisherXY(mydata$race,mydata$eatout, printAll = TRUE)
+```
+  
+White people are twice as likely to eat out than black people. With a p-value of 0.00001183. White people are also 1.9 times more likely to eat out compared to other. With the p-value of 0.00721. 
+  
+# Conclusion
+  
+Our original question was is their a difference between the frequency of eating out based on race.   
+$H_0$ There is no difference among the various races with frequency of eating out  
+$H_A$ There is a statistical difference between at least two races with the frequency of eating out
+From the graphical summary we can see white people eat out more that black or other. Black and other are about the same in regards to eating out. This table shows that white people eat more than black and other people. Black and other eat out less, but are still very similar. Chi-square test shows that the p-value is 0.000002287. Since the p-value is so small we reject the null hypothesis. White people are twice as likely to eat out than black people. With a p-value of 0.00001183. White people are also 1.9 times more likely to eat out compared to other. With the p-value of 0.00721. Finally we reject the null hypothesis.
+  
