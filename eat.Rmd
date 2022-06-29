@@ -52,6 +52,8 @@ barchartGC(~race + eatout,data=mydata)
 barchartGC(~race + eatout,data=mydata, type="percent")
 
 ```
+  
+From the graphical summary we can see white people eat out more that black or other. Black and other are about the same in regards to eating out. 
 
 
 
